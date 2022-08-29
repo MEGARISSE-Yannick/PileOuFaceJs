@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+      <title>Pile ou Face?</title>
+</head>
+
+<body>
+      <div class="all">
+            <div class="titre">
+                  <h1>Pile ou Face</h1>
+            </div>
+            <div class="container">
+                  <div class="score">
+                        <p id="pile-score">Pile: 0</p>
+                        <span></span>
+                        <p id="face-score">Face: 0</p>
+                  </div>
+
+                  <div class="buttons">
+                        <button id="flipBtn" onclick="jeu()">
+                              Flip the coin
+                        </button>
+                        <button id="resetBtn">
+                              Reset
+                        </button>
+                  </div>
+                  <div id="coinBlock">
+                        <div id="coin">
+                              <div id="pile">
+                                    <img src="/img/pile.svg" alt="">
+
+                              </div>
+                              <div id="face">
+                                    <img src="/img/face.svg" alt="">
+
+                              </div>
+
+
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+
+
+</body>
+
+<script src="/script.js"></script>
+
+</html>

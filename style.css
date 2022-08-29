@@ -1,0 +1,110 @@
+body {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      perspective: 800;
+      background-color: #faeee7;
+      color: #33272a;
+}
+
+p {
+      color: #594a4e;
+      align-items: center;
+      position: relative;
+
+}
+
+#flipBtn {
+      background-color: #c3f0ca;
+}
+
+.buttons {
+      position: relative;
+}
+
+button {
+      margin: 20px;
+      border-radius: 5px;
+      border: none;
+      height: 3em;
+      width: 7em;
+      color: #33272a;
+      background-color: #ff8ba7;
+      box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+      background-color: #fffffe;
+      border-radius: 10px;
+      box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+}
+
+
+#coin {
+      height: 150px;
+      width: 150px;
+      position: relative;
+      margin: 50px auto;
+      transform-style: preserve-3d;
+}
+
+#coin span {
+      width: 20vmin;
+      height: 20vmin;
+      box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
+
+}
+
+#pile,
+#face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+
+}
+
+#pile {
+      background-image: url(/img/pile.svg);
+      transform: rotateX(180deg);
+
+}
+
+#face {
+      background-image: url(/img/face.svg);
+}
+
+@keyframes spin-face {
+      0% {
+            transform: rotateX(0);
+      }
+
+      100% {
+            transform: rotateX(1980deg);
+      }
+}
+
+@keyframes spin-pile {
+      0% {
+            transform: rotateX(0);
+      }
+
+      100% {
+            transform: rotateX(2160deg);
+      }
+}
+
+@keyframes lancer {
+      40% {
+            transform: translateY(-300px);
+      }
+}
