@@ -14,7 +14,6 @@ p {
       color: #594a4e;
       align-items: center;
       position: relative;
-
 }
 
 #flipBtn {
@@ -34,7 +33,6 @@ button {
       color: #33272a;
       background-color: #ff8ba7;
       box-shadow: 5px 3px 1px rgba(0, 0, 0, 0.1);
-
 }
 
 
@@ -57,11 +55,9 @@ button {
       transform-style: preserve-3d;
 }
 
-#coin span {
-      width: 20vmin;
-      height: 20vmin;
-      box-shadow: 15px 30px 35px rgba(0, 0, 0, 0.1);
-
+#coin div img {
+      width: 150px;
+      height: 150px;
 }
 
 #pile,
@@ -74,13 +70,7 @@ button {
 }
 
 #pile {
-      background-image: url(/img/pile.svg);
       transform: rotateX(180deg);
-
-}
-
-#face {
-      background-image: url(/img/face.svg);
 }
 
 @keyframes spin-face {
