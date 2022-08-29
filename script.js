@@ -9,14 +9,17 @@ let resetBtn = document.querySelector("#resetBtn");
 flipBtn.addEventListener("click", () => {
       let i = Math.floor(Math.random() * 2);
       coin.style.animation = "none";
+      coinBl.style.animation = "none";
       if (i) {
             setTimeout(function () {
                   coin.style.animation = "spin-face 3s forwards";
+                  coinBl.style.animation = "lancer 3s ease-in";
             }, 100);
             face++;
       } else {
             setTimeout(function () {
                   coin.style.animation = "spin-pile 3s forwards";
+                  coinBl.style.animation = "lancer 3s ease-in";
             }, 100);
             pile++;
       }
